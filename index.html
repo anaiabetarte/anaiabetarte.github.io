@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="google-signin-scope" content="profile email">
+  <meta name="google-signin-client_id" content="1009730353862-neuqb9maq6f7thprjc1ted56srooqhdn.apps.googleusercontent.com">
+  <title>eMercado - Todo lo que busques está aquí</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/form.css" rel="stylesheet">
+  
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <style>
+    body {
+      background-color: rgb(248, 249, 250);
+    }
+  </style>
+</head>
+
+<body>
+  
+  <section class="form-login">
+    <h4 class= Usuario>Inicio de sesión</h4>
+      <form id="formulario" >
+      <div id="form">
+        <div class="user">
+          <label for="" class="form-label">Email</label>
+          <input type="email" class="form-control" id="usuario"  ><span class="barra"></span>
+        </div>
+        <div class="password">
+          <label for="" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="password"  ><span class="barra"></span>
+        </div>
+          <button type="submit" id="botonlog">Iniciar Sesión</button>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="Check">
+          <label class="form-check-label" for="Check">Recuérdame</label>
+        </div>
+        <p id="aviso" class="aviso"></p>
+      </div>  
+    </form>
+    <div class="g-container">
+      <p>o inicia sesion con Google</p>
+      <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+  </div>
+  <div class="g_id_signin"
+     data-type="standard"
+     data-size="large"
+     data-theme="outline"
+     data-text="sign_in_with"
+     data-shape="rectangular"
+     data-logo_alignment="left">
+  </div>
+    </div>
+    
+  </div>
+ </section> 
+  </main>
+  <footer class="text-muted">
+    <div class="container">
+      <p class="float-end">
+        <a href="#">Volver arriba</a>
+      </p>
+      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a> -
+        2022</p>
+      <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
+    </div>
+  </footer>
+  
+</body>
+<script src="js/login.js"></script>
+
+<script>
+  window.onload = function () {
+    google.accounts.id.initialize({
+      client_id: '1009730353862-neuqb9maq6f7thprjc1ted56srooqhdn.apps.googleusercontent.com',
+      
+      ux_mode: "redirect",
+      login_uri: "http://localhost:5500/index2.html",
+      
+      
+    });
+    google.accounts.id.prompt();
+  };
+  
+</script>
+
+</html>

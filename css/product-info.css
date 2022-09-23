@@ -1,0 +1,84 @@
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    padding: 5em 4em 4em 4em;
+    background-color: rgb(219, 218, 218);
+}
+
+
+.information{
+    width: 600px;
+    display: inline;
+    position: relative;
+}
+
+.main-image{
+    display: flex;    
+    justify-content: center;
+    position: relative;
+    margin-left: 0em;
+}
+
+.main-image > img {
+        width: 550px;
+        margin-bottom: 0.5em;
+    }
+
+
+.secondary-image{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.secondary-image > img{
+        width: 180px;
+        margin-right: 0.3em;
+}
+
+.sec-comments{
+margin-top: 2em;
+}
+
+.comment{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.form-group{
+    padding: 5px;
+}
+
+.form-control{
+    margin-top: 15px;
+}
+
+.stars{
+    display: flex;
+    padding: 3px;
+}
+
+.stars a{
+    opacity: 50%;
+    
+}
+
+.stars:hover a{
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.stars a:hover {
+    opacity: 100%;
+}
+
+.stars a:hover ~ a {
+    opacity: 50%;
+}
+
+.stars a.active{
+    opacity: 100%;
+}
